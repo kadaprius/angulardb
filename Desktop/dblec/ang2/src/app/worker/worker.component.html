@@ -1,0 +1,27 @@
+<p>worker works!</p>
+<form [formGroup]="workerForm">
+    <div>
+        <label for="email">Email</label>
+        <div>
+             <input type="email" formControlName="email" id="email" placeholder="email">
+        </div>
+    </div>
+    <div>
+        <label for="password">password</label>
+        <div>
+             <input type="password" formControlName="password" id="password" placeholder="password">
+        </div>
+    </div>
+    <div>
+        <label for="mobile">mobile</label>
+        <div>
+             <input type="text" formControlName="mobile" id="mobile" placeholder="mobile">
+        </div>
+    </div>
+</form>
+
+<button (click)="goToAdmin()">
+    admin
+</button>
+<button (click)="goToChild()">details</button>
+<router-outlet></router-outlet>
